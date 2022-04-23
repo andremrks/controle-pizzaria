@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Pizza by Alfredo - Scranton, PA</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <ul>
+        <li><h1>Pizza by Alfredo</h1></li>
+        <li><h2>Controle de vendas pizzas promocionais</h2></li>
+      </ul>
+    </header>
+
+    <section>
+      <form>
+        <h3>Selecione o sabor:</h3>
+        <ul>
+          <li><input type="radio" id="mussarela" name="pizzas">
+          <label for="mussarela">Mussarela</label></li>
+          <li><input type="radio" id="portuguesa" name="pizzas">
+          <label for="portuguesa">Portuguesa</label></li>
+          <li><input type="radio" id="pepperoni" name="pizzas">
+          <label for="pepperoni">Pepperoni</label></li>
+        </ul>
+      </form>
+    </section>
+
+    <section>
+      <button id="vendas">Adicionar</button> <button id="estorno">Remover</button>
+    </section>
+
+    <section id="table">
+      <table>
+        <tr>
+          <th>Sabor</th><th>Quantidade</th><th>Valor $</th>
+        </tr>
+        <tr>
+          <td>Mussarela</td><td id="resultadoMussarela"></td><td id="vendaMussarela"></td>
+        </tr>
+        <tr>
+          <td>Portuguesa</td><td id="resultadoPortuguesa"></td><td id="vendaPortuguesa"></td>
+        </tr>
+        <tr>
+          <td>Pepperoni</td><td id="resultadoPepperoni"></td><td id="vendaPepperoni"></td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <p>Clique aqui para extrair a planilha de vendas:</p>
+      <button id="export">Extrair</button>
+    </section>
+
+    <script src="tableToExcel.js"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>
